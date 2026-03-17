@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 from bookmark_cleaner.models import BookmarkNode, BookmarkTree, FolderNode
+from bookmark_cleaner.parsers import detect_format
+from bookmark_cleaner.parsers.netscape import export_netscape, parse_netscape
 from bookmark_cleaner.tree import (
     collect_bookmarks,
     collect_urls,
@@ -21,6 +23,9 @@ __all__ = [
     "BookmarkNode",
     "BookmarkTree",
     "FolderNode",
+    "detect_format",
+    "export_netscape",
+    "parse_netscape",
     "collect_bookmarks",
     "collect_urls",
     "count_items",
