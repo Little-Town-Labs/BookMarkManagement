@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.pyc
 *.egg-info/
@@ -7,3 +8,25 @@ build/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+*.egg
+
+# Bookmark files (user data — never commit)
+*.html
+!tests/fixtures/*.html
+*_cleaned.*
+*_BACKUP.*
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+project-config.json
+.claude/sessions/
