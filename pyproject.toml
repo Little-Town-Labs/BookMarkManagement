@@ -9,6 +9,7 @@ description = "Clean, deduplicate, and organize browser bookmark files"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
+dependencies = ["typer>=0.9", "rich>=13.0"]
 authors = [{ name = "bookmark-cleaner contributors" }]
 keywords = ["bookmarks", "browser", "cleanup", "dedup", "organize"]
 classifiers = [
@@ -22,6 +23,9 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Utilities",
 ]
+
+[project.scripts]
+bookmark-cleaner = "bookmark_cleaner.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/bookmark-cleaner/bookmark-cleaner"
